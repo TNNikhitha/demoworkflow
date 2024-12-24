@@ -10,7 +10,7 @@ jobs:
 
         steps:
             - name: print-values-of-env-vars
-              run:
+              run: |
                 echo "$GITHUB_ACTION"
                 echo "$GITHUB_ENV"
                 echo "$GITHUB_API_URL"
