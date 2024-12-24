@@ -13,7 +13,7 @@ jobs:
         runs-on: ubuntu-latest
 
         env:
-            Greetings: Dear
+            Greeting: Dear
             testvar: value-2
         
         steps:
