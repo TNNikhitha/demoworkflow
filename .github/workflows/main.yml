@@ -1,8 +1,14 @@
 name: 'Github workflow demo'
-on: workflow_dispatch
+on: 
+    workflow_dispatch:
+    push:
+        branches: ["main"]
+    
 jobs:
   say_hello:
     runs-on: ubuntu-latest
     steps:
         - name: runscript-to-say-hello
-          run: echo"Howdy Github Action"
+          run: echo Howdy Github Action
+
+        - uses: actions/checkout@v3
