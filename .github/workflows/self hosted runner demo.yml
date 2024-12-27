@@ -8,8 +8,6 @@ jobs:
     hello-self-hosted-runner:
         runs-on: [self-hosted, Windows, X64, gpu]
         steps:
-            - name: run me inside self hosted runner
-              run: echo "Howdy Github Actions. I know I am getting executed inside self hosted runner."
-
+            
             - name: sleep for 100 seconds
               run: sleep 100
